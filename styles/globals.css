@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .underline-clip {
+    clip-path: polygon(0 0, 50% 50%, 100% 0);
+  }
+}

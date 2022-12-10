@@ -5,7 +5,11 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      gridTemplateColumns: {
+        "fill-300": "repeat(auto-fill, 300px)",
+      },
+    },
     screens: {
       xm: "425px",
       // => @media (min-width: 425px) { ... }
