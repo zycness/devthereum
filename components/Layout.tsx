@@ -10,7 +10,7 @@ const Layout: React.FC<Props> = ({ children }) => {
   return (
     <>
       <Navbar />
-      {children}
+      <main className='bg-slate-900'>{children}</main>
       <Footer />
     </>
   );

@@ -13,15 +13,10 @@ const Navbar = (props: Props) => {
         </h1>
         <ul className='flex justify-center items-center space-x-6 font-semibold'>
           <li>
-            <Link href={"/"} className='before:content-none'>
-              Home
-            </Link>
+            <Link href={"/"}>Home</Link>
           </li>
           <li>
             <Link href={"/cryptos"}>Cryptos</Link>
-          </li>
-          <li>
-            <Link href={"/news"}>News</Link>
           </li>
           <li>
             <Link href={"/news"}>Contact</Link>

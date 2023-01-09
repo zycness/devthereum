@@ -34,7 +34,7 @@ const Hero = () => {
       />
       <article className='w-3/4 md:w-1/2 lg:w-1/3'>
         <h1 className='text-white text-2xl font-bold text-left font-mono'>
-          Most recent prices and news from cryptocurrencies
+          Most recent prices from cryptocurrencies
         </h1>
       </article>
       <article className='w-3/4 md:w-1/2 lg:w-1/3 flex justify-center relative pointer-events-none select-none scale-125'>
