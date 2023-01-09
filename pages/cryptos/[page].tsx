@@ -234,13 +234,14 @@ const Page = ({ crypto }: { crypto: SingleCrypto }) => {
               {crypto.links?.homepage ? (
                 <div className='mx-1 flex flex-col'>
                   Home pages:
-                  {crypto.links?.homepage?.map((url: string) =>
+                  {crypto.links?.homepage?.map((url: string, i) =>
                     url.length > 0 ? (
                       <a
                         href={`${url}`}
                         target='_blank'
                         rel='noopener noreferrer'
                         className='break-words font-normal text-gray-500 underline'
+                        key={i + 1}
                       >
                         {url.replace("https://", "").replace("/", "")}
                       </a>
@@ -256,13 +257,14 @@ const Page = ({ crypto }: { crypto: SingleCrypto }) => {
               {crypto.links?.blockchain_site ? (
                 <div className='mx-1 flex flex-col'>
                   Blockchain sites:
-                  {crypto.links?.blockchain_site?.map((url: string) => {
+                  {crypto.links?.blockchain_site?.map((url: string, i) => {
                     return url.length > 0 ? (
                       <a
                         href={`${url}`}
                         target='_blank'
                         rel='noopener noreferrer'
                         className='break-words font-normal text-gray-500 underline'
+                        key={i + 1}
                       >
                         {url.replace("https://", "").replace("/", "")}
                       </a>
@@ -278,13 +280,14 @@ const Page = ({ crypto }: { crypto: SingleCrypto }) => {
               {crypto.links?.official_forum_url ? (
                 <div className='mx-1 flex flex-col'>
                   Official forum:
-                  {crypto.links?.official_forum_url?.map((url: string) => {
+                  {crypto.links?.official_forum_url?.map((url: string, i) => {
                     return url.length > 0 ? (
                       <a
                         href={`${url}`}
                         target='_blank'
                         rel='noopener noreferrer'
                         className='break-words font-normal text-gray-500 underline'
+                        key={i + 1}
                       >
                         {url.replace("https://", "").replace("/", "")}
                       </a>
@@ -300,13 +303,14 @@ const Page = ({ crypto }: { crypto: SingleCrypto }) => {
               {crypto.links?.subreddit_url ? (
                 <div className='mx-1 flex flex-col'>
                   Sub-reddit:
-                  {crypto.links?.subreddit_url?.map((url: string) => {
+                  {crypto.links?.subreddit_url?.map((url: string, i) => {
                     return url.length > 0 ? (
                       <a
                         href={`${url}`}
                         target='_blank'
                         rel='noopener noreferrer'
                         className='break-words font-normal text-gray-500 underline'
+                        key={i + 1}
                       >
                         {url.replace("https://", "").replace("/", "")}
                       </a>
